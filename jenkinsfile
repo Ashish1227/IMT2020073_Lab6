@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/BThangaraju/Jenkins.git'
+                git 'https://github.com/Ashish1227/IMT2020073_Lab6.git'
             }
         }
         stage('Build Code') {
@@ -24,5 +24,21 @@ pipeline {
                 sh "./test2.py"
             }
         }
+        stage('Stage') {
+            steps {
+                echo 'This is staging environment'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'This is deployment stage'
+            }
+        }
+        stage('Monitor') {
+            steps {
+                echo 'This is monitoring stage'
+            }
+        }
+        
     } 
 }
