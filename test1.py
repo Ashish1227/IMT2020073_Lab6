@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # Test case for multiplying two numbers
 import unittest
-from function import muliplication
+from function import multiplication
 
 class TestMult(unittest.TestCase):
   
