@@ -24,21 +24,5 @@ pipeline {
                 sh "./test2.py"
             }
         }
-        stage('Stage') {
-            steps {
-                echo 'This is staging environment'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'This is deployment stage'
-            }
-        }
-        stage('Monitor') {
-            steps {
-                echo 'This is monitoring stage'
-            }
-        }
-        
     } 
 }
